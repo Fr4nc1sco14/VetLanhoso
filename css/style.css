@@ -59,6 +59,10 @@ p {
   cursor: pointer;
 }
 
+.navbar_logo a {
+  cursor: pointer;
+}
+
 /* Ícone de toggle (escondido no desktop) */
 .menu-toggle {
   display: none;
@@ -570,6 +574,7 @@ p {
   }
 
   .hero-left {
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 
