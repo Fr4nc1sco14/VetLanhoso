@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetLanhoso</title>
+    <link rel="icon" type="image/png" href="../images/LogoRed.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="Contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <button><img src="../images/LogoRed.png" alt="Logo" /></button>
+      </div>
+
+      <!-- Toggle Menu Icon -->
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Container para os itens e botão -->
+      <div class="navbar_menu">
+        <ul class="navbar_list">
+          <li class="navbar_items">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="../index.html#Services">Serviços</a>
+          </li>
+          <li class="navbar_items">
+            <a href="Shop.html">Loja</a>
+          </li>
+          <li class="navbar_items active">
+            <a href="Contact.html">Contactos</a>
+          </li>
+        </ul>
+        <div class="navbar_btn">
+          <a href="contactos.html">
+            <button>Contacte Já</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="contact-page">
+      <!-- Seção de Formulário + Newsletter -->
+      <section class="contact-top">
+        <!-- Formulário -->
+        <div class="contact-form">
+          <h2>Entre em contato</h2>
+          <form
+            action="https://formsubmit.co/contato@vetlanhoso.pt"
+            method="POST"
+          >
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Seu nome" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Seu email"
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Sua mensagem"
+              rows="6"
+              required
+            ></textarea>
+
+            <!-- Anti-spam e redirecionamento -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://seusite.github.io/obrigado.html"
+            />
+
+            <button type="submit" class="btn-submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Seção de 3 retângulos de informação -->
+      <section class="contact-info-cards">
+        <div class="info-card">
+          <i class="fa-solid fa-phone-volume"></i>
+          <h4>253 738 040</h4>
+          <p>Ligação 24/7 para suporte e informações.</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>contato@vetlanhoso.pt</h4>
+          <p>Envie-nos um e‑mail a qualquer momento.</p>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Póvoa de Lanhoso, Braga</h4>
+          <p>Venha nos visitar e traga o seu amiguinho!</p>
+        </div>
+      </section>
+
+      <!-- Seção do Mapa -->
+      <section class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.2756973370516!2d-8.269908924373818!3d41.57752742228471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24e3014c255327%3A0xbdbe1a000309333d!2sVetlanhoso-Veterin%C3%A1ria%20De%20Lanhoso%2C%20Lda.!5e1!3m2!1spt-PT!2spt!4v1754600174606!5m2!1spt-PT!2spt"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Coluna do Logo -->
+        <div class="footer-section logo-section">
+          <img src="../images/LogoWhite.png" alt="Logo Vetlanhoso" />
+        </div>
+
+        <!-- Horário de Funcionamento -->
+        <div class="footer-section">
+          <h3>Horário de Funcionamento</h3>
+          <p>
+             Estamos disponíveis para ajudar você e o seu pet a qualquer hora.
+          </p>
+          <ul>
+            <li>Seg – Sex: 08:00 – 20:00</li>
+            <li>Sábado: 09:00 – 20:00</li>
+            <li>Domingo: Fechado</li>
+          </ul>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="footer-section">
+          <h3>Informações de Contato</h3>
+          <p>Entre em contato conosco para mais informações.</p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Lisboa
+            </li>
+            <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> contato@vetlanhoso.pt</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

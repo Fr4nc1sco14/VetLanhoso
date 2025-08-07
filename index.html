@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetLanhoso</title>
+    <link rel="icon" type="image/png" href="images/LogoRed.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <button><img src="images/LogoRed.png" alt="Logo" /></button>
+      </div>
+
+      <!-- Toggle Menu Icon -->
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Container para os itens e botão -->
+      <div class="navbar_menu">
+        <ul class="navbar_list">
+          <li class="navbar_items active">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="#Services">Serviços</a>
+          </li>
+          <li class="navbar_items">
+            <a href="Pages/Shop.html">Loja</a>
+          </li>
+          <li class="navbar_items">
+            <a href="Pages/Contact.html">Contactos</a>
+          </li>
+        </ul>
+        <div class="navbar_btn">
+          <a href="contactos.html">
+            <button>Contacte Já</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-text">
+          <h2>Confia no Crescimento e Tratamento do teu Amigo!</h2>
+          <h1>NÓS TOMAMOS CONTA<br /><span>DO TEU PET</span></h1>
+        </div>
+        <div class="hero-btn">
+          <button onclick="window.location.href='tel:+351123456789'">
+            Ligar Já
+          </button>
+          <button onclick="window.location.href='#offerings'">
+            Mais Detalhes
+          </button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img
+          src="images/Hero.png"
+          alt="Imagem de um animal de estimação feliz com o dono"
+        />
+      </div>
+    </section>
+
+    <section class="offerings" id="offerings">
+      <h2>O QUE OFERECEMOS</h2>
+      <div class="offerings-grid">
+        <!-- Coluna da esquerda -->
+        <div class="offerings-col">
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">1</span>
+            </div>
+            <div class="offering-content">
+              <h3>TOSQUIA</h3>
+              <p class="offering-description">
+                Remoção de pelos mortos para manter a pele saudável e brilhante.
+              </p>
+            </div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">2</span>
+            </div>
+            <div class="offering-content">
+              <h3>TREINO PRIVADO</h3>
+              <p class="offering-description">
+                Sessões personalizadas para corrigir comportamentos específicos.
+              </p>
+            </div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">3</span>
+            </div>
+            <div class="offering-content">
+              <h3>TREINO VIRTUAL</h3>
+              <p class="offering-description">
+                Acompanhamento online com vídeos e feedback semanal.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna central: imagem -->
+        <div class="offerings-image">
+          <img src="images/Offerings.png" alt="Ofertas principais" />
+        </div>
+
+        <!-- Coluna da direita -->
+        <div class="offerings-col">
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">4</span>
+            </div>
+            <div class="offering-content">
+              <h3>TREINO PARA CÃES JOVENS</h3>
+              <p class="offering-description">
+                Programas lúdicos para socialização de filhotes.
+              </p>
+            </div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">5</span>
+            </div>
+            <div class="offering-content">
+              <h3>PROGRAMA ESPECIAL</h3>
+              <p class="offering-description">
+                Atividades e desafios adequados ao perfil do seu cão.
+              </p>
+            </div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">
+              <span class="offering-number">6</span>
+            </div>
+            <div class="offering-content">
+              <h3>PROGRAMA DE SEGURANÇA</h3>
+              <p class="offering-description">
+                Ensino de comandos de emergência e primeiros socorros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <img src="images/StatSmile.svg" alt="Clientes Felizes" />
+        <h1>2700</h1>
+        <h3>Clientes Felizes</h3>
+      </div>
+
+      <div class="stat">
+        <img src="images/StatDog.svg" alt="Cães Atendidos" />
+        <h1>2700</h1>
+        <h3>Cães Atendidos</h3>
+      </div>
+
+      <div class="stat">
+        <img src="images/StatReward.svg" alt="Prémios" />
+        <h1>2700</h1>
+        <h3>Prémios</h3>
+      </div>
+
+      <div class="stat">
+        <img src="images/StatStethoscope.svg" alt="Consultas" />
+        <h1>2700</h1>
+        <h3>Consultas</h3>
+      </div>
+    </section>
+
+    <section class="services-section" id="Services">
+      <h2>Os Nossos Serviços</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <img src="images/Services1.png" alt="Serviço 1" class="service-img" />
+          <h5>Lorem ipsum</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            minus impedit aliquid molestias autem cupiditate esse iure!
+          </p>
+          <button class="service-btn">Saber Mais</button>
+        </div>
+        <div class="service-card">
+          <img src="images/Services2.png" alt="Serviço 2" class="service-img" />
+          <h5>Lorem ipsum</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            minus impedit aliquid molestias autem cupiditate esse iure!
+          </p>
+          <button class="service-btn">Saber Mais</button>
+        </div>
+        <div class="service-card">
+          <img src="images/Services3.png" alt="Serviço 3" class="service-img" />
+          <h5>Lorem ipsum</h5>
+          <p parli>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            minus impedit aliquid molestias autem cupiditate esse iure!
+          </p>
+          <button class="service-btn">Saber Mais</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Coluna do Logo -->
+        <div class="footer-section logo-section">
+          <img src="images/LogoWhite.png" alt="Logo Vetlanhoso" />
+        </div>
+
+        <!-- Horário de Funcionamento -->
+        <div class="footer-section">
+          <h3>Horário de Funcionamento</h3>
+          <p>
+             Estamos disponíveis para ajudar você e o seu pet a qualquer hora.
+          </p>
+          <ul>
+            <li>Seg – Sex: 08:00 – 20:00</li>
+            <li>Sábado: 09:00 – 20:00</li>
+            <li>Domingo: Fechado</li>
+          </ul>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="footer-section">
+          <h3>Informações de Contato</h3>
+          <p>Entre em contato conosco para mais informações.</p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Lisboa
+            </li>
+            <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> contato@vetlanhoso.pt</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

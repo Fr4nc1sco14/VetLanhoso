@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetLanhoso</title>
+    <link rel="icon" type="image/png" href="../images/LogoRed.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="Shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <button><img src="../images/LogoRed.png" alt="Logo" /></button>
+      </div>
+
+      <!-- Toggle Menu Icon -->
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Container para os itens e botão -->
+      <div class="navbar_menu">
+        <ul class="navbar_list">
+          <li class="navbar_items">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="../index.html#Services">Serviços</a>
+          </li>
+          <li class="navbar_items active">
+            <a href="Shop.html">Loja</a>
+          </li>
+          <li class="navbar_items">
+            <a href="Contact.html">Contactos</a>
+          </li>
+        </ul>
+        <div class="navbar_btn">
+          <a href="contactos.html">
+            <button>Contacte Já</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    
+
+<section class="Shop-Title"><h1>Loja</h1></section>
+
+<section class="filters">
+  <div class="filter-toggle">
+    <i class="fa-solid fa-filter"></i>
+  </div>
+  <div class="filter-menu">
+    <div class="filter-group">
+      <label for="searchFilter">Pesquisar:</label>
+      <input type="text" id="searchFilter" placeholder="Nome do produto...">
+    </div>
+    <div class="filter-group">
+      <label for="familiaFilter">Família:</label>
+      <select id="familiaFilter">
+        <option value="all">Todas</option>
+        <option value="cão">Cão</option>
+        <option value="gato">Gato</option>
+        <option value="aves">Aves</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="categoriaFilter">Categoria:</label>
+      <select id="categoriaFilter">
+        <option value="all">Todas</option>
+        <option value="racao-cao">Ração Cão</option>
+        <option value="racao-gato">Ração Gato</option>
+        <option value="brinquedos-cao">Brinquedos Cão</option>
+        <option value="brinquedos-gato">Brinquedos Gato</option>
+        <option value="suplementos">Suplementos</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="marcaFilter">Marca:</label>
+      <select id="marcaFilter">
+        <option value="all">Todas</option>
+        <option value="DogPlus">DogPlus</option>
+        <option value="CatGourmet">CatGourmet</option>
+        <option value="BrinquaCão">BrinquaCão</option>
+        <option value="MiauToys">MiauToys</option>
+        <option value="DogFit">DogFit</option>
+        <option value="ConfortPaw">ConfortPaw</option>
+        <option value="PetCare">PetCare</option>
+        <option value="DentalPlay">DentalPlay</option>
+        <option value="SafeWalk">SafeWalk</option>
+        <option value="EasyWalk">EasyWalk</option>
+        <option value="CatClimb">CatClimb</option>
+        <option value="FreshPurr">FreshPurr</option>
+        <option value="MiauRelax">MiauRelax</option>
+        <option value="BellCat">BellCat</option>
+        <option value="CeramiPet">CeramiPet</option>
+        <option value="PlayLight">PlayLight</option>
+        <option value="WoodPlay">WoodPlay</option>
+        <option value="AquaBird">AquaBird</option>
+        <option value="SandBath">SandBath</option>
+        <option value="PerchLife">PerchLife</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label id="FaixaPreco">Faixa de Preço:</label>
+      <input type="range" id="priceFilter" min="0" max="50" value="50">
+      <span id="priceValue">Até 50€</span>
+    </div>
+    <div class="filter-group">
+      <label for="stockFilter">Disponibilidade:</label>
+      <select id="stockFilter">
+        <option value="all">Todos</option>
+        <option value="in-stock">Em Estoque</option>
+      </select>
+    </div>
+  </div>
+  <div class="filter-group sort-group">
+    <label for="sortFilter">Ordenar por:</label>
+    <select id="sortFilter">
+      <option value="none">Nenhum</option>
+      <option value="price-asc">Preço (Crescente)</option>
+      <option value="price-desc">Preço (Decrescente)</option>
+      <option value="name-asc">Nome (A-Z)</option>
+    </select>
+  </div>
+</section>
+
+<section class="Shop-Products">
+  <h2>Catálogo de <span class="highlight">Produtos</span></h2>
+  <div class="Shop-Products-Items"></div>
+</section>
+
+<!-- 
+<section class="categories-section">
+  <h2>Top <span class="highlight">Categorias</span></h2>
+  <div class="categories-container">
+    <a href="/produtos/racao-gato.html" class="category-item" style="background-color: #fff4e6;">
+      <div class="category-card">
+        <img src="../images/RaçãoGato.png" alt="Ração Gato">
+      </div>
+      <p class="category-label">Ração Gato</p>
+    </a>
+    <a href="/produtos/brinquedos-gato" class="category-item" style="background-color: #e6f7ff;">
+      <div class="category-card">
+        <img src="../images/BrinquedoGato.png" alt="Brinquedos Gato">
+      </div>
+      <p class="category-label">Brinquedos Gato</p>
+    </a>
+    <a href="/produtos/racao-cao" class="category-item" style="background-color: #f0fff4;">
+      <div class="category-card">
+        <img src="../images/RaçãoCão.png" alt="Ração Cão">
+      </div>
+      <p class="category-label">Ração Cão</p>
+    </a>
+    <a href="/produtos/brinquedos-cao" class="category-item" style="background-color: #f9e6ff;">
+      <div class="category-card">
+        <img src="../images/BrinquedoCão.png" alt="Brinquedos Cão">
+      </div>
+      <p class="category-label">Brinquedos Cão</p>
+    </a>
+    <a href="/produtos/suplementos" class="category-item" style="background-color: #fff9e6;">
+      <div class="category-card">
+        <img src="../images/Suplementos.png" alt="Suplementos">
+      </div>
+      <p class="category-label">Suplementos</p>
+    </a>
+  </div>
+</section> -->
+
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Coluna do Logo -->
+        <div class="footer-section logo-section">
+          <img src="../images/LogoWhite.png" alt="Logo Vetlanhoso" />
+        </div>
+
+        <!-- Horário de Funcionamento -->
+        <div class="footer-section">
+          <h3>Horário de Funcionamento</h3>
+          <p>
+             Estamos disponíveis para ajudar você e o seu pet a qualquer hora.
+          </p>
+          <ul>
+            <li>Seg – Sex: 08:00 – 20:00</li>
+            <li>Sábado: 09:00 – 20:00</li>
+            <li>Domingo: Fechado</li>
+          </ul>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="footer-section">
+          <h3>Informações de Contato</h3>
+          <p>Entre em contato conosco para mais informações.</p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Lisboa
+            </li>
+            <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> contato@vetlanhoso.pt</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>
