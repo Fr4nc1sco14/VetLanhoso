@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const modalBody = document.getElementById('modal-body');
         modalBody.innerHTML = `
           <h2>${product.nome}</h2>
-          <img src="../images/${product.imagem}" alt="${product.nome}" style="max-width:100%; margin:20px 0; border-radius:8px;">
+          <img src="../data/ProductsImages/${product.imagem}" alt="${product.nome}" style="max-width:100%; margin:20px 0; border-radius:8px;">
           <p><strong>Descrição:</strong> ${product.descrição}</p>
           <p><strong>Preço:</strong> ${product.preço.toFixed(2)}€</p>
           <p><strong>Marca:</strong> ${product.marca}</p>

@@ -97,9 +97,9 @@ p {
 
 .navbar_items a {
   display: block;
-  padding: 10px 15px;       /* mesmo padding dos li, ajustável */
-  text-decoration: none;    /* remove sublinhado */
-  color: inherit;           /* herda cor do .navbar_items */
+  padding: 10px 15px; /* mesmo padding dos li, ajustável */
+  text-decoration: none; /* remove sublinhado */
+  color: inherit; /* herda cor do .navbar_items */
 }
 
 /* Efeito hover para os links */
@@ -346,6 +346,7 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  align-items: stretch; /* Faz todos os cards terem a mesma altura */
 }
 
 .service-card {
@@ -355,6 +356,8 @@ p {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column; /* Permite alinhar botão no fundo */
 }
 
 .service-card:hover {
@@ -363,7 +366,8 @@ p {
 
 .service-img {
   width: 100%;
-  height: auto;
+  height: 300px; /* Altura fixa para uniformizar imagens */
+  object-fit: cover; /* Mantém proporção cortando excesso */
   border-radius: 8px;
   margin-bottom: 16px;
 }
@@ -378,6 +382,7 @@ p {
   color: #333;
   font-size: 0.95rem;
   margin-bottom: 16px;
+  flex-grow: 1; /* Ocupa o espaço disponível para alinhar o botão em baixo */
 }
 
 .service-btn {
@@ -392,6 +397,84 @@ p {
 
 .service-btn:hover {
   background-color: #e6951a;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: var(--accent-color);
+}
+
+.modal-content h2 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.modal-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+  background-color: var(--accent-color);
 }
 
 /* Footer Section */
@@ -414,7 +497,7 @@ p {
 
 .footer-section {
   flex: 1;
-  min-width: 250px;
+    min-width: 250px;
 }
 
 .logo-section {
@@ -517,6 +600,10 @@ p {
     margin-bottom: 20px;
   }
 
+  .modal-content {
+    width: 95%;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -597,6 +684,23 @@ p {
 
   .service-card {
     width: 100%;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content p {
+    font-size: 0.9rem;
+  }
+
+  .modal-btn {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 
   .footer {
@@ -680,6 +784,23 @@ p {
   .service-btn {
     padding: 8px 16px;
     font-size: 14px;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-content p {
+    font-size: 0.875rem;
+  }
+
+  .modal-btn {
+    padding: 8px 16px;
+    font-size: 13px;
   }
 
   .footer {

@@ -113,7 +113,7 @@
 
         <!-- Coluna central: imagem -->
         <div class="offerings-image">
-          <img src="images/Offerings.png" alt="Ofertas principais" />
+          <img src="images/Hero.png" alt="Ofertas principais" />
         </div>
 
         <!-- Coluna da direita -->
@@ -185,34 +185,57 @@
       <h2>Os Nossos Serviços</h2>
       <div class="services-container">
         <div class="service-card">
-          <img src="images/Services1.png" alt="Serviço 1" class="service-img" />
-          <h5>Lorem ipsum</h5>
+          <img
+            src="images/Services1.png"
+            alt="Consulta Veterinária"
+            class="service-img"
+          />
+          <h5>Consultas e Check-ups</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            minus impedit aliquid molestias autem cupiditate esse iure!
+            Realizamos consultas de rotina e check-ups completos para garantir a
+            saúde e bem-estar do seu animal de estimação, com acompanhamento
+            personalizado.
           </p>
-          <button class="service-btn">Saber Mais</button>
+          <button class="service-btn" data-service="consultas">Saber Mais</button>
         </div>
         <div class="service-card">
-          <img src="images/Services2.png" alt="Serviço 2" class="service-img" />
-          <h5>Lorem ipsum</h5>
+          <img
+            src="images/Services2.png"
+            alt="Vacinação e Prevenção"
+            class="service-img"
+          />
+          <h5>Vacinação e Prevenção</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            minus impedit aliquid molestias autem cupiditate esse iure!
+            Oferecemos programas de vacinação adaptados a cada espécie e idade,
+            bem como aconselhamento sobre prevenção de doenças.
           </p>
-          <button class="service-btn">Saber Mais</button>
+          <button class="service-btn" data-service="vacinacao">Saber Mais</button>
         </div>
         <div class="service-card">
-          <img src="images/Services3.png" alt="Serviço 3" class="service-img" />
-          <h5>Lorem ipsum</h5>
-          <p parli>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            minus impedit aliquid molestias autem cupiditate esse iure!
+          <img
+            src="images/Services3.png"
+            alt="Cirurgia Veterinária"
+            class="service-img"
+          />
+          <h5>Cirurgia e Cuidados Pós-Operatórios</h5>
+          <p>
+            Realizamos cirurgias gerais e especializadas, com monitorização
+            constante e cuidados pós-operatórios para uma recuperação segura.
           </p>
-          <button class="service-btn">Saber Mais</button>
+          <button class="service-btn" data-service="cirurgia">Saber Mais</button>
         </div>
       </div>
     </section>
+
+    <!-- Modal for Service Details -->
+    <div class="modal" id="serviceModal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <button class="modal-btn" onclick="window.location.href='Pages/Contact.html'">Contacte-nos para Agendar</button>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-container">
@@ -225,7 +248,7 @@
         <div class="footer-section">
           <h3>Horário de Funcionamento</h3>
           <p>
-             Estamos disponíveis para ajudar você e o seu pet a qualquer hora.
+            Estamos disponíveis para ajudar você e o seu pet a qualquer hora.
           </p>
           <ul>
             <li>Seg – Sex: 08:00 – 20:00</li>
